@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://drib726n2d1gn"]
+
+[ext_resource type="PackedScene" uid="uid://ca37iryuavrgy" path="res://cenas/character_body_2d.tscn" id="1_f50pn"]
+
+[node name="CharacterBody2D" unique_id=337237481 instance=ExtResource("1_f50pn")]
+
+[node name="CollisionShape2D" parent="." index="0" unique_id=1312187016]
+visible = false
+
+[node name="AnimatedSprite2D" parent="." index="1" unique_id=404166677]
+animation = &"idle"

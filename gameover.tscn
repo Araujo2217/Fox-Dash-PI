@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://cu2w8w3edn36x"]
+
+[ext_resource type="Script" uid="uid://bw73a5e1gs31f" path="res://gameover.gd" id="1_4nh4k"]
+[ext_resource type="Texture2D" uid="uid://y7tiuusiuvhp" path="res://assets/Jungle Asset Pack/parallax background/Captura de Tela 2026-11-16 às 11.00.46.png" id="2_tpdqf"]
+
+[node name="gameover" type="Control" unique_id=1268573486]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 13.0
+offset_right = 8.0
+offset_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4nh4k")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2007189880]
+layout_mode = 0
+offset_left = -488.0
+offset_top = -320.0
+offset_right = 859.0
+offset_bottom = 509.0
+texture = ExtResource("2_tpdqf")
+
+[node name="CenterContainer" type="CenterContainer" parent="TextureRect" unique_id=1401380901]
+layout_mode = 0
+offset_left = 744.0
+offset_top = 464.0
+offset_right = 850.0
+offset_bottom = 507.0
+
+[node name="Button" type="Button" parent="TextureRect/CenterContainer" unique_id=1878428490]
+layout_mode = 2
+text = "RESTART
+"
+
+[connection signal="pressed" from="TextureRect/CenterContainer/Button" to="." method="_on_button_pressed"]
